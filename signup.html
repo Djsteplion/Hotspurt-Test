@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+   <div class="body">
+      <div class="content-container">
+        <form id="form" action="/">
+          <div class="division">
+
+            <div class="sign-up" id="welcome">
+              <img src="./images/Ellipse 9.png" id="circle1">
+              <h2>Get started now, with your reliable <span>HORTSPURT</span></h2>
+              <img src="./images/Ellipse 10.png" id="circle2">
+            </div>
+
+
+              <div class="sign-up">
+                <p class="head"> Almost there! <br> <span>  Quickly set up your account in a second... </span></p>  
+              <div class="input-control">
+                <input type="text" id="fullname" placeholder="First Name" class="input" required>
+                <img src="images/face-man.svg" alt="">
+              </div>
+    
+              <div class="input-control">
+                <input type="text" name="" id="lastname" placeholder="Username" class="input" required>
+                <img src="images/face-man.svg" alt="">    
+              </div>
+    
+              <div class="input-control">
+                <input type="email" name="" id="gmail" placeholder="Email" class="input" required>
+                <img src="images/email-edit-outline.png" alt="">
+              </div>
+    
+              <div class="input-control">
+                <input type="text" name="" id="phonenumber" placeholder="Phone" class="input"required>
+                <img src="images/call.png" alt="" class="phoneImg" style="width:2%; padding-right: 2px;">
+              </div>
+    
+              <!--The option to select gender-->
+            
+             
+                <label for="gender"></label>
+                <select id="gender" name="gender"  required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+
+          
+                  
+              <br>
+              <div class="input-control">
+                <input type="password" name="" id="pin" placeholder="Pin" class="input">               
+                  <img src="images/Show.png" alt="" id="visible" class="eye"  onclick="toggleIcons()">
+              </div>
+    
+              <div class="input-control">
+                <input type="password" name="" id="confirm-pin" placeholder="Confirm Pin" class="input"> 
+                  <img src="images/Show.png" alt="" id="visible" class="eye"  onclick="toggleIcons()">
+              </div> 
+    
+              <button type="submit" class="submit-button" id="btn"><a href="./purchase.html"><b>Sign Up</b></a></button>            
+          <div class="text-container">
+            <p class="bottom">Have an account before? <a href="./login.html">Click here to sign in</a></p>
+          </div>
+              </div>
+        </div>
+      </form>
+      </div>
+   </div>
+   <script>
+
+    var a;
+    function toggleIcons() {
+      if(a ==1) {
+        document.getElementById('password').type = 'password';
+        document.getElementById('visible').src = 'images/Show (1).png';
+        a = 0
+      }
+      else{
+        document.getElementById('password').type = 'text';
+        document.getElementById('visible').src = 'images/Show.png';
+        a = 1
+      }
+    }
+    </script>
+  </body>
+  </html>
