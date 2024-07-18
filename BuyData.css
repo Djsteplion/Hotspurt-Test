@@ -96,9 +96,26 @@ body{
     padding-right: 30px;
     cursor: pointer;
 }
+.second-half {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
 
+.second-half img {
+    position: relative; 
+    display: block;
+    margin-top: -25px; 
+    width: 80px;
+    height: 80px; 
+    z-index: 1; 
+}
 
-
+.second-half .second {
+    margin-top: -20px; 
+    z-index: 2; 
+}
 /* third phase */
 .instruct{
     margin-top: 40px;
@@ -150,10 +167,50 @@ body{
     outline-style: none;
 }
 
+/** For Padi Section **/
+.textBox{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 30px 10px 28px;
+
+}
+
+.instruct3{
+    font-size: 18px;
+}
+
+.commentbox{
+    height: 50px;
+    outline-color: #9955BB;
+    outline-width: 1px;
+    font-size: 15px;
+    padding-left: -20px;
+}
+
+.textSuggestionBox{
+    margin: 5px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suggestion{
+    background-color: rgba(0,0,0,0.1);
+    margin: 0px 10px 5px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #9955BB;
+    font-weight: 600;
+}
+
+.suggestion:hover{
+    cursor: pointer;
+}
+
+
 /* fourth phase */
 
 .instruct2{
-    margin-top: 40px;
+    margin-top: 50px;
     padding-left: 30px;
     font-size: 18px;
 }
@@ -162,7 +219,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 0px 30px;
 }
 
 
@@ -260,7 +317,11 @@ body{
     opacity: 0.5;
     transition: 500ms;
 }
-
+/* Style for disabled submit button */
+.proceed.disabled {
+    opacity: 0.6; 
+    cursor: not-allowed; 
+}
 /* sixth phase */
 
 .dataPlans{

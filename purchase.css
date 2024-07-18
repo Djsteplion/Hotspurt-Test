@@ -1,170 +1,271 @@
-/* first phase */
 
-body{
-    font-family: sans-serif;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./css/Poppins') format('truetype');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* first phase */
+
 .profileHead{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .profileAndName{
-    display: flex;
+  display: flex;
 }
 
 .intro{
-    padding-left: 7px;
+  padding: 10px;
 }
-
 
 /* second phase */
 
 .walletBox{
-    border-radius: 10px;
-    background-color: #9955BB;
-    padding: 25px 15px;
-    margin: 2px 26px;
-    color: white;
+  border-radius: 10px;
+  background-color: #9955BB;
+  padding: 25px 15px;
+  margin: 2px 26px;
+  color: white;
 }
 
 #walletBalanceHidden{
-    display: none;
+  display: none;
 }
 
 #invisible{
-    display: block;
+  display: block;
 }
 
 #visible{
-    display: none;
+  display: none;
 }
 
 .walletB{
-    display: flex;
-    padding: 15px 5px;
-    align-items: center;
+  display: flex;
+  padding: 15px 5px;
+  align-items: center;
 }
 
 .walletImg{
-    width: 2.3%;
+  width: 2.3%;
 }
 
 .wb{
-    padding: 0px 8px;
-    font-size: 22px;
+  padding: 0px 8px;
+  font-size: 22px;
 }
 
 #invisible:hover, #visible:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .walletBalance{
-    font-size: 20px;
-    padding: 15px 5px;
-    font-weight: 700;
+  font-size: 20px;
+  padding: 15px 5px;
+  font-weight: 700;
 }
 
 .walletBalanceHidden{
-    padding: 15px 5px;
+  padding: 15px 5px;
 }
 
 .addMoney{
-    font-size: 18px;
-    background-color: white;
-    border: 1px solid white;
-    margin: 20px 2.5px;
-    padding: 7px 20px 7px 10px;
-    border-radius: 22px;
-    color: #9955BB;
-    max-width: max-content;
-    text-decoration-line: none;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid white;
+  margin: 20px 2.5px;
+  padding: 7px 20px 7px 10px;
+  border-radius: 22px;
+  color: #9955BB;
+  max-width: max-content;
+  text-decoration-line: none;
 }
 
 .addMoney:hover{
-    transition: 400ms;
-    opacity: 0.8;
-    padding-right: 30px;
-    cursor: pointer;
+  transition: 400ms;
+  opacity: 0.8;
+  padding-right: 30px;
+  cursor: pointer;
 }
 
 /* third phase */
 
 .mainServices{
-    display: flex;
-    justify-content: space-between;
-    background-image: url("images/Rectangle 5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 18px 5px;
-    margin: 0px 20px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(245,225,255,0.61);
+  box-shadow: 1px 1px 4px 0 rgba(153,85,187,0.61);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 18px 25px;
+  margin: 0px 32px 15px 30px;
+}
+
+.getAirtime{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.forPadi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+.morre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 0px;
+  padding: 10px 30px;  
+}
+
+.optional{
+  background-color: #9955BB;
+  border: 1px solid white;
+  border-radius: 6px;
+  height: 45px;
+  width: 49px;
+  text-align: center;
+}
+
+.servText{
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.optional img{
+  width: auto;
+  margin-top: 8.5px;
 }
 
 .avail{
-    padding-left: 30px;
-    padding-top: 25px;
+  padding-left: 30px;
+  padding-top: 25px;
 }
 
 
 /* fourth phase */
 .otherServ{
-    padding-left: 30px;
-    padding-top: 25px;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.otherServi{
+  border-bottom: 3px solid #9955BB;
+  margin-left: 30px;
+  margin-right: 15px;
 }
 
 .otherServices{
-    background: rgba(245, 225, 255, 0.6117647059);
-    border-bottom: 1px solid blueviolet;
-    border-radius: 8px;
-    box-shadow: 1px 1px 4px 0px rgba(153, 85, 187, 0.6117647059);
-    padding: 30px;
-    margin: 50px 37px 30px 30px;
+  background: rgba(245, 225, 255, 0.6117647059);
+  border-bottom: 1px solid blueviolet;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 0px rgba(153, 85, 187, 0.6117647059);
+  padding: 10px 0px;
+  margin: 50px 37px 30px 30px;
 }
 
 .moreServices{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #moreServices{
-    display: none;
+  display: none;
 }
 
 /* fifth phase */
-.referral{
-    display: flex;
-    background: rgba(245, 225, 255, 0.6117647059);
-    border-bottom: 1px solid blueviolet;
-    border-radius: 8px;
-    box-shadow: 1px 1px 4px 0px rgba(153, 85, 187, 0.6117647059);
-    padding: 30px;
-    margin: 50px 37px 30px 30px;
+.refer {
+  width: 100%;
+  height: 150px;
+  max-height: 200px;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
-.rImg{
-    padding-top: 20px;
-    padding-left: 30px;
+.refer .head {
+  font-size: 26px;
+  font-weight: 700;
+}
+.refer .head span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.refer img {
+  width: 100px;
+  height: 100px;
+  padding:10px;
+}
+span a {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9955BB;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+span a:hover {
+  background-color: #ddd;
 }
 
 
 /* sixth phase */
 .buttons{
-    display: flex;
-    justify-content: space-between;
-    margin: 120px 30px 0px 30px;
-    padding: 20px 12px;
-    background-color: white;
-    box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom:0;
+  width:100%;
+  display: flex;
+  padding: 20px 12px;
+  justify-content: space-between;
+  background-color: white;
 }
 
 .bottom{
-    text-align: center;
+  text-align: center;
 }
-
+.bottom p {
+  font-size: 25px;
+  color: #888;
+}
 .bottom:hover{
-    transition: 500ms;
-    transform: translateY(-10px);
-    cursor: pointer;
+  transition: 500ms;
+  transform: translateY(-5px);
+  cursor: pointer;
 }

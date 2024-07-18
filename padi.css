@@ -1,0 +1,375 @@
+
+body{
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+/* First phase */
+.firstphase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.padiAnimation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.directionArrow{
+    color: #9955BB;
+    font-weight: 700;
+}
+
+.arrow{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.backArrow{
+    text-decoration-line: none;
+    color: white;
+    font-weight: 400;
+    margin-left: 30px;
+    padding: 7px 20px;
+    border-radius: 11px;
+    background-color: #9955BB;
+}
+
+.backArrow:hover{
+    cursor: pointer;
+    transition: 500ms;
+    padding-right: 25px;
+    opacity: 0.7;
+}
+
+.rotateLogo{
+    -webkit-animation: moveBox 1s normal linear infinite;
+    animation: moveBox 1s normal linear infinite;
+}
+
+@keyframes moveBox{
+    0%{
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    25%{
+        -webkit-transform: translateX(-17px);
+        transform: translateX(-17px);
+    }
+
+    50%{
+        -webkit-transform: translateX(-14px);
+        transform: translateX(-14px);
+    }
+
+    75%{
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+
+    100%{
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+/* second phase */
+
+.walletBox{
+    border-radius: 10px;
+    background-color: #9955BB;
+    padding: 25px 15px;
+    margin: 2px 26px;
+    color: white;
+    margin-top: 30px;
+}
+
+#walletBalanceHidden{
+    display: none;
+}
+
+#invisible{
+    display: block;
+}
+
+#visible{
+    display: none;
+}
+
+.walletB{
+    display: flex;
+    padding: 15px 5px;
+    align-items: center;
+}
+
+.walletImg{
+    width: 0.2%;
+}
+
+.wb{
+    padding: 0px 8px;
+    font-size: 22px;
+}
+
+#invisible:hover, #visible:hover{
+    cursor: pointer;
+}
+
+.walletBalance{
+    font-size: 20px;
+    padding: 15px 5px;
+    font-weight: 700;
+}
+
+.walletBalanceHidden{
+    padding: 15px 5px;
+}
+
+.addMoney{
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px 2.5px;
+    padding: 7px 20px 7px 10px;
+    border-radius: 22px;
+    color: #9955BB;
+    max-width: max-content;
+    text-decoration-line: none;
+}
+
+.addMoney:hover{
+    transition: 400ms;
+    opacity: 0.8;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.second-half {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+
+.second-half img {
+    position: relative; 
+    display: block;
+    margin-top: -25px; 
+    width: 80px;
+    height: 80px; 
+    z-index: 1; 
+}
+
+.second-half .second {
+    margin-top: -20px; 
+    z-index: 2; 
+}
+
+/** Third Phase ***/
+.padiOptions{
+    background-color: rgba(245,225,255,0.61);
+    box-shadow: 1px 1px 4px 0 rgba(153,85,187,0.61);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18px 25px;
+    margin: 40px 32px 15px 30px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.getAirtime4Padi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.getData4Padi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.optional{
+    background-color: #9955BB;
+    border: 1px solid white;
+    border-radius: 6px;
+    height: 45px;
+    width: 49px;
+    text-align: center;
+  }
+
+  
+.optional img{
+    width: auto;
+    margin-top: 8.5px;
+  }
+  
+  .servText{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 15px;
+    margin-left: 10px;
+  }
+
+  .proceedBtn{
+    text-decoration-line: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 30px;
+    padding: 5px 20px;
+    border-radius: 11px;
+    background-color: #9955BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proceedBtn:hover{
+    cursor: pointer;
+    transition: 400ms;
+    opacity: 70%;
+  }
+
+
+
+
+
+  @media screen and (max-width:600px){
+
+    body,html{
+        overflow-y: none;
+    }
+    
+    .arrow{
+        font-weight: 900;
+        font-size: 15px;
+    }
+
+    .firstphase{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .backArrow{
+        text-decoration-line: none;
+        color: white;
+        font-weight: 400;
+        margin-left: 3px;
+        padding: 7px 15px;
+        border-radius: 10px;
+        background-color: #9955BB;
+    }
+        /* second phase */
+    
+        .walletBox{
+            border-radius: 10px;
+            background-color: #9955BB;
+            padding:5px 15px 30px 10px;
+            margin: 0px 7px;
+            color: white;
+            margin-top: 10px;
+        }
+    
+        .walletImg{
+            width: 8%;
+        }
+    
+        .wb{
+            font-size: 14px;
+            padding: 0px 6px;
+        }
+    
+        .walletB{
+            display: flex;
+            align-items: center;
+        }
+    
+        .walletBalance{
+            font-size: 18px;
+            font-weight: 700;
+            padding-left: 7px;
+            padding-top: 4px;
+        }
+    
+        .addMoney{
+            font-size: 17px;
+            padding: 6px 17px 7px 10px;
+        }    
+    
+    
+    
+        /* third phase */
+    
+        .avail{
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 17px;
+        }
+    
+        .padiOptions{
+            margin: 20px 10px;
+            padding: 12px 10px;
+        }
+    
+        .getAirtime{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .getData{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+        }
+    
+        .forPadi{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+        }
+    
+        .morre{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: max-content;
+            margin: 0px;
+            padding: 5px 15px;  
+        }
+    
+        .optional{
+            background-color: #9955BB;
+            border: 1px solid white;
+            border-radius: 6px;
+            height: 45px;
+            width: 49px;
+            text-align: center;
+        }
+    
+        .servText{
+            font-size: 14px;
+        }
+    
+        .optional img{
+            width: auto;
+            margin-top: 8.5px;
+        }
+    
+    }    
+    
+         
+    
+    
+    
+    
+    
+    

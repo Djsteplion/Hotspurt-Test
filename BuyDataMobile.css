@@ -86,7 +86,33 @@
     width: 80%;
     padding-top: 5px;
 }
+/** for padi ***/
+.textBox{
+    margin: 30px 10px 20px 5px;
+}
 
+.instruct3{
+    font-size: 13px;
+}
+
+.commentbox{
+    height: 35px;
+}
+
+.textSuggestionBox{
+    margin: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suggestion{
+    background-color: rgba(0,0,0,0.1);
+    margin: 0px 10px 5px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #9955BB;
+    font-weight: 600;
+}
 
 /* fourth phase */
 .instruct2{

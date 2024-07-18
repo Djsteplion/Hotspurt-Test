@@ -13,7 +13,7 @@
     <!--First phase--->
     <div class="profileHead">
         <div class="profileAndName">
-            <img src="images/Ellipse 177.png" alt="user profile image" class="userProfileImage">
+           <a href='./profile.html'><img src="images/Ellipse 177.png" alt="user profile image" class="userProfileImage"></a>
             <h1 class="intro">
                 <span>Hi,</span>
                 <span class="customerName">Johnson</span>
@@ -27,7 +27,8 @@
     <!--second phase-->
     <div class="walletBox">
         <div class="walletB">
-            <img src="images/Group.png" alt=" " class="walletImg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" style="fill: white;"><path d="M16 12h2v4h-2z"></path>
+            <path d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z"></path></svg>
             <span class="wb">
                Wallet Balance
             </span>
@@ -52,45 +53,69 @@
      <!--Third phase-->
      <h1 class="avail">Available Services</h1>
      <div class="mainServices">
-        <a href="./BuyData.html"><img src="images/Frame 8.png" class="data"></a>
-        <a href="#"><img src="images/Frame 10.png" class="call"></a>
-        <a href="#"><img src="images/Frame 9.png" class="add"></a>
+        <div class="getAirtime">
+            <div class="optional">
+                <a href="./BuyAirtime.html" class=""><img src="images/Vector (1).png" alt=""></a>
+            </div>
+            <div class="servText">
+                Get Airtime
+            </div>
+        </div>
+        <div class="getData">
+            <div class="optional">
+                <a href="./BuyData.html"><img src="images/Vector 2.png" alt=""></a>
+            </div>
+            <div class="servText">
+                Buy Data
+            </div>
+        </div>
+        <div class="forPadi">
+            <div class="optional">
+                <a href="./padi.html"><img src="images/Group 16.png" alt=""></a>
+            </div>
+            <div class="servText">
+                For Padi
+            </div>
+        </div>
      </div>
 
      <!--Fourth phase-->
-     <h2 class="otherServ">Other Services(Coming Soon..)</h2>
      <div class="otherServices">
-        <a href="#"><img src="images/Frame 20.png" id="others" onclick="viewMore()"></a>
-
+        <div class="otherServi">
+            <b>Coming soon</b>
+        </div>
+        <div class="morre" id="other" onclick="viewMore()">
+            <div class="optional">
+                <img src="images/shape.png" alt="">
+            </div>
+            <div class="servText">
+                More
+            </div>
+        </div>
+      
         <div class="moreServices" id="moreServices">
-            <img src="./images/Frame 11.png" alt="">
-            <img src="./images/Frame 12.png" alt="">
-            <img src="./images/Frame 13.png" alt="">
-            <img src="./images/Frame 14.png" alt="">
-            <img src="./images/Frame 15.png" alt="">
-            <img src="./images/Frame 16.png" alt="">
-            <img src="./images/Frame 17.png" alt="">
-            <img src="./images/f" alt="">
+            <a href="./error 404.html"><img src="./images/Frame 11.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 12.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 13.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 14.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 15.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 16.png" alt=""></a>
+            <a href="./error 404.html"><img src="./images/Frame 17.png" alt=""></a>
         </div>
      </div>
 
 
     <!--Fifth phase-->
-    <div class="referral">
-        <div class="refertext">
-            <h3>Refer & Get Free Data</h3>
-            <p> Earn 1gb on Every One Person you refer</p>
-        </div>
-        <div class="rImg">
-            <img src="images/account-tie-voice-outline.png" alt=" " class="referimg">
-        </div>
+    <div class="refer">
+        <p class="head">Refer & Get Free Data<br><span>Earn 1GB on every person you refer</span></p>
+        <img src="images/acct-outline.png" alt="Refer">
     </div>
 
     <!--Sixth phase-->
     <div class="buttons">
         <div class="bottom">
             <a href="./index.html" class="icon" id="myLink"><img src="./images/Group.svg"></a>
-            <p>Home</p>
+            <p style="color: #9955BB;">Home</p>
         </div>
 
         <div class="bottom">
@@ -99,12 +124,12 @@
         </div>
 
         <div class="bottom">
-            <a href="#" class="icon" id="myLink"><img src="./images/gift-outline.svg"></a>
+            <a href="./bonus.html" class="icon" id="myLink"><img src="./images/gift-outline.svg"></a>
             <p>Bonus</p>
         </div>
 
         <div class="bottom">
-            <a href="#" class="icon" id="myLink"><img src="./images/clock.svg"></a>
+            <a href="./historyPage.html" class="icon" id="myLink"><img src="./images/clock.svg"></a>
             <p>History</p>
         </div>
 
@@ -137,7 +162,7 @@
     
         function viewMore(){
             document.getElementById("moreServices").style.display = "flex";
-            document.getElementById("others").style.display = "none";
+            document.getElementById("other").style.display = "none";
         }
     
     </script>
